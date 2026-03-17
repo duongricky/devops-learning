@@ -2,7 +2,7 @@
 
 ## Architecture Overview
 
-![Infrastructure Diagram](./images/infrastructure-diagram.png)
+![Infrastructure Diagram](./infra-diagram.png)
 
 *The diagram above illustrates the complete AWS infrastructure architecture deployed by this Terraform configuration.*
 
