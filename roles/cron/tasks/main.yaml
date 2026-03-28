@@ -1,0 +1,18 @@
+- name: Install cron
+  apt:
+    name: cron
+    state: present
+    update_cache: yes
+
+- name: Start cron
+  service:
+    name: cron
+    state: started
+    enabled: true
+
+- name: Add cron job
+  cron:
+    name: "log hello"
+    minute: "*/5"
+    user: ubuntu
+    job: "echo hello >> /tmp/hello.log"

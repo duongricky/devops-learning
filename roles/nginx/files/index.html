@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansible Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .badge {
+            margin-top: 20px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            background: #27ae60;
+            color: white;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>🚀 Ansible + Nginx Demo</h1>
+        <p>If you see this page, deployment works!</p>
+
+        <div class="badge">
+            Deployed via Ansible
+        </div>
+
+        <p style="margin-top:20px;">
+            Server time:
+            <script>
+                document.write(new Date().toLocaleString());
+            </script>
+        </p>
+    </div>
+</body>
+</html>

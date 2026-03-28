@@ -1,0 +1,19 @@
+- name: Install nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Start nginx
+  service:
+    name: nginx
+    state: started
+    enabled: true
+
+- name: Update homepage
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+    owner: www-data
+    group: www-data
+    mode: '0644'
+  notify: restart nginx

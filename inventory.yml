@@ -1,0 +1,4 @@
+all:
+  hosts:
+    myserver:
+      ansible_host: <EC2_PUBLIC_IP> # {{ your_public_ip }}
